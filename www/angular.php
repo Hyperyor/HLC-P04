@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Inicio</title>
+    <title>Angular vs AngularJS</title>
     <meta charset="UTF-8" />
     <link
       rel="stylesheet"
@@ -12,15 +12,16 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="assets/css/nav.css">
+    
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
   </head>
 
-  <body>
+  <body ng-app="myapp">
 
     <!-- navbar -->  
     <nav class="navbar navbar-expand-lg fixed-top ">  
@@ -44,52 +45,58 @@
       </div>
     </nav>
 
-    <header class="header">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="description ">
-          <h1>    Bienvenido a la práctica 4 de Jose Luis Bernal
-            <p>   En esta web encontraras información sobre el Back-End y el Front-End, además 
-                  de conocer las diferencias entre Angular y Angular JS, en un entorno
-                  dinámico y responsive. 
-            </p>
-          
-          </h1>  
-          </div>
-      </div>
-    </header>
+    <br/>
+    <br/>
+    <br/>
 
-    <div class="about" id="about">
-      <div class="container">
-        <h1 class="text-center">Sobre el autor</h1>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <img src="assets/imagenes/autor.jpg" class="img-fluid">
-            <span class="text-justify">Programador</span>
-          </div>
-          <div class="col-lg-8 col-md-8 col-sm-12 desc">
-            
-            <h3>José Luis Bernal Navarrete</h3>
-            <p>
-              Desarrollador de 23 años. Versado en lenguajes de programación 
-              como C, C#, Java y python. </p>
-            <p>
-              Instruido en el desarrollo web con php y herramientas como 
-              Bootstrap, jquery, json y angular js.</p>
-            <p>
-              Además, ha estudiado en profundidad el desarrollo y administración 
-              de Bases de Datos con PL/SQL. </p>
-            <p>
-              Segundo ganador y nominado mundial en el NASA International Space 
-              Apps Challenge de 2019, celebrado en Everis, Sevilla.
-            </p>
-          </div>
+    <div class="container">
+        <div class="form-group">
+            <h2>Deja un comentario</h2>
+            <form ng-controller="userCtrl">
+                <textarea class="form-control" rows="5" ng-model="cmtName" placeholder="Tu comentario"></textarea>
+                <br/>
+                <button class="btn btn-success btn-md pull-right" ng-click='btn_post();'>Enviar</button>
+                <br/>
+                <hr/>
+                <h3>Comentarios</h3>
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="cmt in comments"> {{ cmt }}
+                        
+                        <!--<button id="delete"type="button" ng-click="post_cmt($home)" class="btn btn-danger btn-md pull-right" aria-label="Right Align">
+                        Delete
+                        </button>-->
+                    </li>
+                </ul>
+            </form> 
         </div>
-      </div>
     </div>
     
+    <script>
+    var fetch = angular.module('myapp', []);
     
+    fetch.controller('userCtrl', ['$scope', '$http', function ($scope, $http) {
+     /*$http({
+      method: 'get',
+      url: 'listar.php'
+     }).then(function successCallback(response) {
+      // Store response data
+      $scope.comments = response.data;
+     }); {{ cmt.coment }}*/
+     $scope.comments = [];
+     $scope.btn_post = function() {
+        if ($scope.cmtName != '') {
+            $scope.comments.push($scope.cmtName);
+            $scope.cmtName = "";
+        }
+    $scope.post_cmt = function($home) {
+        $scope.comments.splice($home, 1);
+        }
+    }
+    }]);
     
-    <script type="text/javascript" src='assets/js/main.js'></script>
-  </body>
+    </script>
+    
+    <!--<script type="text/javascript" src='assets/js/comments.js'></script>-->
+    
+    </body>
 </html>

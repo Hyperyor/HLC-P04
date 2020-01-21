@@ -73,3 +73,44 @@ padding: 2em;
     line-height:2;
     color:#888;
    }
+
+   /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 900px) {
+    .description p {
+      font-size: 30px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 650px) {
+    .description p{
+      font-size: 15px;
+    }
+  }
+
+     /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 900px) {
+    .description h1 {
+      font-size: 40px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 650px) {
+    .description h1{
+      font-size: 20px;
+    }
+  }
+
+   /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+   @media screen and (max-width: 300px) {
+    .description h1{
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    .description p{
+      font-size: 5px;
+    }
+  }
