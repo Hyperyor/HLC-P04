@@ -48,96 +48,99 @@
       </div>
     </nav>
     <!-- --> 
-    <br/>
-    <!-- contenido --> 
-    <div class="container">
+    <section>
+        <br/>
+        <!-- contenido --> 
+        <div class="container">
 
-        <!-- Title -->
-        <h1 class="mt-4">Angular vs AngularJS</h1>
+            <!-- Title -->
+            <h1 class="mt-4">Angular vs AngularJS</h1>
 
-        <!-- Author -->
-        <p class="lead">
-        por
-        <a href="#">Jose Luis Bernal Navarrete</a>
-        </p>
+            <!-- Author -->
+            <p class="lead">
+            por
+            <a href="#">Jose Luis Bernal Navarrete</a>
+            </p>
 
-        <hr>
+            <hr>
 
-        <!-- Date/Time -->
-        <p>22/01/2020</p>
+            <!-- Date/Time -->
+            <p>22/01/2020</p>
 
-        <hr>
+            <hr>
 
-        <!-- Preview Image -->
-        <img class="img-fluid rounded" src="assets/imagenes/avsajs.jpg" alt="">
+            <!-- Preview Image -->
+            <img class="img-fluid rounded" src="assets/imagenes/avsajs.jpg" alt="">
 
-        <hr>
+            <hr>
 
-            <!-- Post Content -->
-            <p class="lead">Antes de nada debes tener claro que, a pesar de compartir el nombre, AngularJS y Angular no tienen nada que ver. El mal llamado Angular no es una nueva versión de AngularJS (también denominado Angular 1.x). Es un nuevo framework, escrito desde cero y con conceptos y formas de trabajar completamente distintos.</p>
+                <!-- Post Content -->
+                <p class="lead">Antes de nada debes tener claro que, a pesar de compartir el nombre, AngularJS y Angular no tienen nada que ver. El mal llamado Angular no es una nueva versión de AngularJS (también denominado Angular 1.x). Es un nuevo framework, escrito desde cero y con conceptos y formas de trabajar completamente distintos.</p>
 
-            <p>Angular utiliza un sistema de inyección de dependencias jerárquico impulsando su rendimiento de forma brutal. También implementa la detección de cambios basados en árboles unidireccionales, que también incrementa el rendimiento. Según algunos datos oficiales, Angular puede llegar a ser 5 veces más rápido que <mark>AngularJS</mark>.</p>
+                <p>Angular utiliza un sistema de inyección de dependencias jerárquico impulsando su rendimiento de forma brutal. También implementa la detección de cambios basados en árboles unidireccionales, que también incrementa el rendimiento. Según algunos datos oficiales, Angular puede llegar a ser 5 veces más rápido que <mark>AngularJS</mark>.</p>
 
-            <p>A continuación vamos a mostrar las mayores diferencias entre ambos frameworks.</p>
+                <p>A continuación vamos a mostrar las mayores diferencias entre ambos frameworks.</p>
 
-            <ul>
-                <li>Angular está orientado a teléfonos inteligentes (smartphones). AngularJS no se hizo para soportar teléfonos inteligentes (smartphones). Los soporta mediante bibliotecas adicionales pero no se hizo pensando en  eso. En cambio Angular desde el principio se creó para que tuviera un buen rendimiento en los teléfonos inteligentes (smartphones).</li>
-                <li>Angular usa TypeScript, mientras que AngularJS usa JavaScript. TypeScript es un superconjunto de JavaScript, en otras palabras es un JavaScript muy mejorado.</li>
-                <li>En Angular se usan componentes web, en AngularJS se usan controladores. Los componentes web son un conjunto de características que se añaden a las especificaciones HTML y DOM. La intención es que sean reutilizables en las aplicaciones web.</li>
-                <li>La sintaxis de las directivas estructurales ha cambiado. Por ejemplo, en Angular se usa *ngFor y en AngularJS se usa ng-repeat.</li>
-                <li>Angular usa directamente el DOM. Las siglas DOM significan Document Object Model. Se trata de un conjunto de objetos para representar documentos HTML, XHTML, y XML, un modelo estándar sobre cómo pueden combinarse dichos objetos, y una interfaz estándar para acceder a ellos y manipularlos. A través del DOM, los programas pueden acceder y modificar el contenido, la estructura y el estilo de los documentos HTML y XML, que es para lo que se diseñó el DOM principalmente. En AngularJS se usan directivas para acceder al DOM, en Angular ya es algo directo.</li>
-            </ul>
-            
-            <blockquote class="blockquote">
-            <cite class="mb-0">Angular es un nuevo framework, escrito desde cero y con conceptos y formas de trabajar completamente distintos.</cite>
-            <footer class="blockquote-footer">Jose Luis Bernal Navarrete
+                <ul>
+                    <li>Angular está orientado a teléfonos inteligentes (smartphones). AngularJS no se hizo para soportar teléfonos inteligentes (smartphones). Los soporta mediante bibliotecas adicionales pero no se hizo pensando en  eso. En cambio Angular desde el principio se creó para que tuviera un buen rendimiento en los teléfonos inteligentes (smartphones).</li>
+                    <li>Angular usa TypeScript, mientras que AngularJS usa JavaScript. TypeScript es un superconjunto de JavaScript, en otras palabras es un JavaScript muy mejorado.</li>
+                    <li>En Angular se usan componentes web, en AngularJS se usan controladores. Los componentes web son un conjunto de características que se añaden a las especificaciones HTML y DOM. La intención es que sean reutilizables en las aplicaciones web.</li>
+                    <li>La sintaxis de las directivas estructurales ha cambiado. Por ejemplo, en Angular se usa *ngFor y en AngularJS se usa ng-repeat.</li>
+                    <li>Angular usa directamente el DOM. Las siglas DOM significan Document Object Model. Se trata de un conjunto de objetos para representar documentos HTML, XHTML, y XML, un modelo estándar sobre cómo pueden combinarse dichos objetos, y una interfaz estándar para acceder a ellos y manipularlos. A través del DOM, los programas pueden acceder y modificar el contenido, la estructura y el estilo de los documentos HTML y XML, que es para lo que se diseñó el DOM principalmente. En AngularJS se usan directivas para acceder al DOM, en Angular ya es algo directo.</li>
+                </ul>
                 
-            </footer>
-            </blockquote>
-
-            <p>Como vemos, aunque siempre hay cosas en común, AngularJS y Angular son muy diferentes tanto en lo que se refiere a la forma de trabajar como a los conceptos que subyacen a ambas tecnologías.</p>
-
-            <p>En los puntos anteriores solo hemos tocado la superficie, pero esperamos que te haya ayudado a ver la manera tan distinta de trabajar que tienen ambas plataformas JavaScript.</p>
-
-            <p>Por eso no se puede hablar de una nueva versión, sino de un nuevo framework, que es necesario aprender prácticamente desde cero.</p>
-
-        <hr>    
-    </div>
-        
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-
-    <div class="container">
-        <div class="form-group">
-            <h2>Deja un comentario</h2>
-            <form ng-controller="todoControl" ng-submit="addAct()">
-                <textarea class="form-control" rows="1" ng-model="nuevaAct.usuario" placeholder="Tu usuario"></textarea>
-                <textarea class="form-control" rows="5" ng-model="nuevaAct.descripcion" placeholder="Tu comentario"></textarea>
-                <br/>
-                <button type="submit"  class="btn btn-success btn-md pull-right">Enviar</button>
-                <br/>
-                <hr/>
-                <h3>Comentarios</h3>
-                <div class="row">
+                <blockquote class="blockquote">
+                <cite class="mb-0">Angular es un nuevo framework, escrito desde cero y con conceptos y formas de trabajar completamente distintos.</cite>
+                <footer class="blockquote-footer">Jose Luis Bernal Navarrete
                     
-                    <div class="col-sm">
-                        <ul class="list-group">
-                            <li class="list-group-item" ng-repeat="cmt in todo"> <strong>{{ cmt.usuario}}</strong> {{ cmt.descripcion }}
-                                
-                            </li>
-                        </ul>
-                    </div>
+                </footer>
+                </blockquote>
 
-                    <div class="col-sm">
-                        <button ng-click="todo=[]" class="btn btn-danger btn-md pull-right">Borrar todos los datos</button>
-                    </div>
-                </div>
-            </form> 
+                <p>Como vemos, aunque siempre hay cosas en común, AngularJS y Angular son muy diferentes tanto en lo que se refiere a la forma de trabajar como a los conceptos que subyacen a ambas tecnologías.</p>
+
+                <p>En los puntos anteriores solo hemos tocado la superficie, pero esperamos que te haya ayudado a ver la manera tan distinta de trabajar que tienen ambas plataformas JavaScript.</p>
+
+                <p>Por eso no se puede hablar de una nueva versión, sino de un nuevo framework, que es necesario aprender prácticamente desde cero.</p>
+
+            <hr>    
         </div>
-    </div>
+    </section>
 
+    <section>  
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+        <div class="container">
+            <div class="form-group">
+                <h2>Deja un comentario</h2>
+                <form ng-controller="todoControl" ng-submit="addAct()">
+                    <textarea class="form-control" rows="1" ng-model="nuevaAct.usuario" placeholder="Tu usuario"></textarea>
+                    <textarea class="form-control" rows="5" ng-model="nuevaAct.descripcion" placeholder="Tu comentario"></textarea>
+                    <br/>
+                    <button type="submit"  class="btn btn-success btn-md pull-right">Enviar</button>
+                    <br/>
+                    <hr/>
+                    <h3>Comentarios</h3>
+                    <div class="row">
+                        
+                        <div class="col-sm">
+                            <ul class="list-group">
+                                <li class="list-group-item" ng-repeat="cmt in todo"> <strong>{{ cmt.usuario}}</strong> {{ cmt.descripcion }}
+                                    
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm">
+                            <button ng-click="todo=[]" class="btn btn-danger btn-md pull-right">Borrar todos los datos</button>
+                        </div>
+                    </div>
+                </form> 
+            </div>
+        </div>
+    </section>
     
 
     <!-- Footer -->

@@ -59,34 +59,36 @@
       </div>
     </header>
 
-    <div class="about" id="about">
-      <div class="container">
-        <h1 class="text-center">Sobre el autor</h1>
-        <div class="row">
-          <div class="col-lg-4 col-md-4 col-sm-12">
-            <img src="assets/imagenes/autor.jpg" class="img-fluid">
-            <span class="text-justify">Programador</span>
-          </div>
-          <div class="col-lg-8 col-md-8 col-sm-12 desc">
-            
-            <h3>José Luis Bernal Navarrete</h3>
-            <p>
-              Desarrollador de 23 años. Versado en lenguajes de programación 
-              como C, C#, Java y python. </p>
-            <p>
-              Instruido en el desarrollo web con php y herramientas como 
-              Bootstrap, jquery, json y angular js.</p>
-            <p>
-              Además, ha estudiado en profundidad el desarrollo y administración 
-              de Bases de Datos con PL/SQL. </p>
-            <p>
-              Segundo ganador y nominado mundial en el NASA International Space 
-              Apps Challenge de 2019, celebrado en Everis, Sevilla.
-            </p>
+    <section>
+      <div class="about" id="about">
+        <div class="container">
+          <h1 class="text-center">Sobre el autor</h1>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12">
+              <img src="assets/imagenes/autor.jpg" class="img-fluid">
+              <span class="text-justify">Programador</span>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-12 desc">
+              
+              <h3>José Luis Bernal Navarrete</h3>
+              <p>
+                Desarrollador de 23 años. Versado en lenguajes de programación 
+                como C, C#, Java y python. </p>
+              <p>
+                Instruido en el desarrollo web con php y herramientas como 
+                Bootstrap, jquery, json y angular js.</p>
+              <p>
+                Además, ha estudiado en profundidad el desarrollo y administración 
+                de Bases de Datos con PL/SQL. </p>
+              <p>
+                Segundo ganador y nominado mundial en el NASA International Space 
+                Apps Challenge de 2019, celebrado en Everis, Sevilla.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
     
     
     
