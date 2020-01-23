@@ -34,9 +34,9 @@
       </button>
       <div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
       <li class="nav-item">
-          <a class="nav-link" data-value="about" href="angular.php">Angular vs AngularJS</a>        </li>  
+          <a class="nav-link" data-value="angular" href="angular.php">Angular vs AngularJS</a>        </li>  
       <li class="nav-item">
-          <a class="nav-link " data-value="portfolio"href="#">FE y BE</a>    
+          <a class="nav-link " data-value="feybe"href="frameworks.php">Front-End y Back-End</a>    
       </li>
       <li class="nav-item"> 
           <a class="nav-link " data-value="blog" href="#">Blog</a>         </li>   
@@ -48,7 +48,7 @@
       </div>
     </nav>
     <!-- --> 
-    
+    <br/>
     <!-- contenido --> 
     <div class="container">
 
@@ -104,7 +104,10 @@
         <hr>    
     </div>
         
-
+    <br/>
+    <br/>
+    <br/>
+    <br/>
 
     <div class="container">
         <div class="form-group">
