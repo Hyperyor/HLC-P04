@@ -1,3 +1,15 @@
+<?php
+
+    require 'database.php';
+
+    $records = $conexion->query('SELECT * FROM empresas');
+
+    
+
+    
+
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -14,7 +26,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bdgrafica.css">
     <link rel="stylesheet" type="text/css" href="assets/css/nav.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
@@ -35,7 +47,7 @@
           <a class="nav-link " data-value="feybe"href="frameworks.php">Front-End y Back-End</a>    
       </li>
       <li class="nav-item"> 
-          <a class="nav-link " data-value="galeria" href="bdgrafica.php">Galeria</a>         </li>   
+        <a class="nav-link " data-value="galeria" href="bdgrafica.php">Galeria</a>         </li>    
       <li class="nav-item">  
         <a class="nav-link " data-value="team" href="#">Team</a>       </li>  
       <li class="nav-item"> 
@@ -44,54 +56,56 @@
       </div>
     </nav>
 
-    <header class="header">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="description ">
-          <h1>    Bienvenido a la práctica 4 de Jose Luis Bernal
-            <p>   En esta web encontraras información sobre el Back-End y el Front-End, además 
-                  de conocer las diferencias entre Angular y Angular JS, en un entorno
-                  dinámico y responsive. 
-            </p>
-          
-          </h1>  
-          </div>
-      </div>
-    </header>
+    
+    
 
-    <section>
-      <div class="about" id="about">
-        <div class="container">
-          <h1 class="text-center">Sobre el autor</h1>
-          <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-12">
-              <img src="assets/imagenes/autor.jpg" class="img-fluid">
-              <span class="text-justify">Programador</span>
-            </div>
-            <div class="col-lg-8 col-md-8 col-sm-12 desc">
-              
-              <h3>José Luis Bernal Navarrete</h3>
-              <p>
-                Desarrollador de 23 años. Versado en lenguajes de programación 
-                como C, C#, Java y python. </p>
-              <p>
-                Instruido en el desarrollo web con php y herramientas como 
-                Bootstrap, jquery, json y angular js.</p>
-              <p>
-                Además, ha estudiado en profundidad el desarrollo y administración 
-                de Bases de Datos con PL/SQL. </p>
-              <p>
-                Segundo ganador y nominado mundial en el NASA International Space 
-                Apps Challenge de 2019, celebrado en Everis, Sevilla.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
+    <!-- Team section -->
+
+            
+    <?php    
+        while($row = $records->fetch_assoc()) {
+
+            $nombre = $row["nombre"];
+            
+
+            echo ' <section class="team">
+            <article class="container"> <h1 class="text-center">'. $nombre .'</h1> <div class="row"> ';
+
+            $recordsJuegos = $conexion->query('SELECT * FROM juegos');
+            while($juegos = $recordsJuegos->fetch_assoc()) {
+            
+                $empresa = $juegos["empresa"];
+                $titulo =  $juegos["titulo"];
+                $fec =  $juegos["lanzamiento"];
+                $foto =  $juegos["portada"];
+
+                if($empresa == $nombre)
+                {
+                    echo ' <div class="col-lg-3 col-md-3 col-sm-12 item">
+                    <img src="'. $foto .'" class="img-fluid" alt="'. $titulo .'">
+                    <div class="des">
+                    '. $titulo .'
+                    </div>
+                    <span class="text-muted">' . $fec . '</span>
+                    </div>';
+                }
+                
+            }
+
+            
+            
+            echo '</div></article> </section>';
+
+            echo '<br/>';
+
+        }
+    ?>
+
+        
     
     
     
-    <script type="text/javascript" src='assets/js/main.js'></script>
+    
   </body>
 </html>

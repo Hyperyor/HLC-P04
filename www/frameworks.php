@@ -38,7 +38,7 @@
           <a class="nav-link " data-value="feybe"href="frameworks.php">Front-End y Back-End</a>    
       </li>
       <li class="nav-item"> 
-          <a class="nav-link " data-value="blog" href="#">Blog</a>         </li>   
+        <a class="nav-link " data-value="galeria" href="bdgrafica.php">Galeria</a>         </li>   
       <li class="nav-item">  
         <a class="nav-link " data-value="team" href="#">Team</a>       </li>  
       <li class="nav-item"> 
