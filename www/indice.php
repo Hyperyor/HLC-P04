@@ -88,9 +88,21 @@
         </div>
       </div>
     </section>
+
+    <section id="contact" class="map">
+      <br/>
+      <h1 class="text-center">Web desarrollada en:</h1>
+      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.030192656783!2d-6.072631484803299!3d37.38911824202672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1213525f4743e5%3A0x21ceb607bb8bb7fa!2sInstituto%20de%20Educaci%C3%B3n%20Secundaria%20Ies%20El%20Majuelo!5e0!3m2!1ses!2ses!4v1580075961470!5m2!1ses!2ses"></iframe>
+      <br />
+      <small>
+        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.030192656783!2d-6.072631484803299!3d37.38911824202672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1213525f4743e5%3A0x21ceb607bb8bb7fa!2sInstituto%20de%20Educaci%C3%B3n%20Secundaria%20Ies%20El%20Majuelo!5e0!3m2!1ses!2ses!4v1580075961470!5m2!1ses!2ses"></a>
+      
+      </small>
+    </section>
     
     
     
     <script type="text/javascript" src='assets/js/main.js'></script>
+    <script src="assets/js/map.min.js"></script>
   </body>
 </html>
