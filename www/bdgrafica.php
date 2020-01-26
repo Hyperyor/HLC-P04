@@ -49,9 +49,7 @@
       <li class="nav-item"> 
         <a class="nav-link " data-value="galeria" href="bdgrafica.php">Galeria</a>         </li>    
       <li class="nav-item">  
-        <a class="nav-link " data-value="team" href="#">Team</a>       </li>  
-      <li class="nav-item"> 
-      <a class="nav-link " data-value="contact" href="#">Contact</a>       </li> 
+        <a class="nav-link " data-value="consultas" href="consultas.php">Consultas</a>       </li> 
       </ul> 
       </div>
     </nav>
