@@ -11,7 +11,7 @@
     die('Connection Failed: ' . $e->getMessage());
   }*/
 
-  $servidor="172.21.0.2";
+  $servidor="mysql";
   //$servidor= "172.21.0.2"; // LEO
   $usuario="root";
   $pass="1234";

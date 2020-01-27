@@ -1,6 +1,6 @@
 <?php
 
-$server="172.21.0.2";
+$server="mysql";
 $user="root";
 $pass="1234";
 $bd="db";
